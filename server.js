@@ -5,7 +5,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 var corsOptions = {
-  origin: "https://personalcrm1.herokuapp.com",
+  origin: "*",
   methods: ["GET", "POST"],
   optionsSuccessStatus: 200,
 };
