@@ -43,6 +43,15 @@ app.get("/api/users/:id", cors(corsOptions), (req, res) => {
   res.send(user123456);
 });
 
+/* other routes */
+app.post("/addconnection", cors(corsOptions), (req, res) => {
+  res.send("good");
+});
+
+app.post("/addphoto", cors(corsOptions), (req, res) => {
+  res.send("good");
+});
+
 /* litsen on port process.env.PORT || 5000 */
 app.listen(process.env.PORT || 5000);
 
